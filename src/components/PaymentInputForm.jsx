@@ -14,6 +14,30 @@ import {
 import { Info } from "lucide-react";
 
 export default function PaymentInputForm({ formData, onChange }) {
+  // Helper function to set region-specific fees
+  const setRegionFees = (region) => {
+    if (region === "eu") {
+      onChange({
+        feeRegion: "eu",
+        stripeFee: 1.5,
+        stripeFeeFixed: 0.25,
+      });
+    } else {
+      onChange({
+        feeRegion: "us",
+        stripeFee: 2.9,
+        stripeFeeFixed: 0.3,
+      });
+    }
+  };
+
+  // Set EU as initial state if feeRegion is not set
+  useState(() => {
+    if (!formData.feeRegion) {
+      setRegionFees("eu");
+    }
+  }, []);
+
   return (
     <div>
       <div className="flex flex-wrap">
@@ -241,22 +265,59 @@ export default function PaymentInputForm({ formData, onChange }) {
 
           {/* Stripe Fee Settings */}
           <div>
-            <div className="flex items-center gap-1 mb-2 ">
-              <Label className="text-sm font-medium">Stripe Fee Settings</Label>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-sm">
-                    <p className="text-xs">
-                      Stripe's processing fees vary by region and card type.
-                      Default values are 2.9% + $0.30 for US cards, but custom
-                      rates may apply for high-volume businesses.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-1">
+                <Label className="text-sm font-medium">
+                  Stripe Fee Settings
+                </Label>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-sm">
+                      <p className="text-xs">
+                        Stripe's processing fees vary by region and card type.
+                        <br />
+                        <br />
+                        <strong>US rates:</strong> 2.9% + $0.30 per successful
+                        card charge
+                        <br />
+                        <strong>EU rates:</strong> 1.5% + €0.25 for European
+                        cards
+                        <br />
+                        <br />
+                        Custom rates may apply for high-volume businesses.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div
+                    className={`text-xs px-2 py-1 rounded-md cursor-pointer ${
+                      formData.feeRegion === "us"
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-gray-100 text-gray-600"
+                    }`}
+                    onClick={() => setRegionFees("us")}
+                  >
+                    US
+                  </div>
+                  <div
+                    className={`text-xs px-2 py-1 rounded-md cursor-pointer ${
+                      formData.feeRegion === "eu"
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-gray-100 text-gray-600"
+                    }`}
+                    onClick={() => setRegionFees("eu")}
+                  >
+                    EU
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="flex mb-2 w-full">
@@ -284,7 +345,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                 <div className="text-xs text-gray-500 mb-1">Fixed Fee</div>
                 <div className="flex h-10 w-full max-w-[180px]">
                   <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
-                    $
+                    {formData.feeRegion === "eu" ? "€" : "$"}
                   </span>
                   <Input
                     id="stripeFeeFixed"

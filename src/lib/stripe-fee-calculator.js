@@ -45,51 +45,58 @@ export function calculateStripeFees({
   // Calculate international fee if applicable (1% extra)
   const internationalFeeAmount = includeInternationalFee ? paymentAmount * 0.01 : 0;
   
-  // Calculate payout fee (0.25% + €0.10 per payout for "Platform handles pricing" model)
-  // The 0.25% is calculated from the payment amount - this is what Stripe charges to send a payout
+  // Calculate payout fee for "Platform handles pricing" model - as per Stripe docs: 0.25% + €0.10 per payout
+  // Only applied when the platform handles pricing
   const payoutFeeAmount = feeHandling === 'platform' ? (paymentAmount * 0.0025) + 0.10 : 0;
   const payoutFeeDescription = `0.25% of payment amount ($${paymentAmount.toFixed(2)}) + $0.10 fixed fee per payout transfer`;
   
-  // Calculate monthly account fee ($2 per month for active connected accounts)
+  // Calculate monthly account fee - as per Stripe docs: €2 per monthly active account
+  // Only applied when the platform handles pricing and it's enabled
   const monthlyAccountFee = (includeConnectedAccountFee && feeHandling === 'platform') ? 2 : 0;
   
   // Calculate total stripe fees
   const totalStripeFee = stripeFeeAmount + internationalFeeAmount + payoutFeeAmount + monthlyAccountFee;
 
-  // Different calculations based on fee handling approach
+  // Different calculations based on charge type and fee handling approach
   let connectedAccountAmount, platformAmount;
   
   if (chargeType === 'direct') {
-    // Direct charges - fees come from the connected account
+    // Direct charges - connected account is the merchant of record
+    // https://stripe.com/docs/connect/direct-charges
     if (feeHandling === 'stripe') {
-      // Stripe handles pricing
+      // Stripe handles pricing - fees come from the connected account
       connectedAccountAmount = paymentAmount - stripeFeeAmount - internationalFeeAmount - calculatedApplicationFee;
       platformAmount = calculatedApplicationFee;
     } else {
-      // Platform handles pricing
-      connectedAccountAmount = paymentAmount - calculatedApplicationFee - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount;
-      platformAmount = calculatedApplicationFee - stripeFeeAmount - internationalFeeAmount - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount;
+      // Platform handles pricing - platform absorbs all stripe fees
+      // Connected account only has the application fee deducted
+      connectedAccountAmount = paymentAmount - calculatedApplicationFee;
+      platformAmount = calculatedApplicationFee - stripeFeeAmount - internationalFeeAmount - monthlyAccountFee - payoutFeeAmount;
     }
   } else if (chargeType === 'destination') {
-    // Destination charges - platform pays the application fee to connected account
+    // Destination charges - platform is the merchant of record
+    // https://stripe.com/docs/connect/destination-charges
     if (feeHandling === 'stripe') {
-      // Stripe handles pricing
+      // Stripe handles pricing - stripe fees are deducted from the destination account amount
       connectedAccountAmount = paymentAmount - stripeFeeAmount - internationalFeeAmount - calculatedApplicationFee;
       platformAmount = calculatedApplicationFee;
     } else {
-      // Platform handles pricing
-      connectedAccountAmount = paymentAmount - calculatedApplicationFee - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount;
-      platformAmount = calculatedApplicationFee - stripeFeeAmount - internationalFeeAmount - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount;
+      // Platform handles pricing - platform absorbs all stripe fees
+      // Connected account only has the application fee deducted
+      connectedAccountAmount = paymentAmount - calculatedApplicationFee;
+      platformAmount = calculatedApplicationFee - stripeFeeAmount - internationalFeeAmount - monthlyAccountFee - payoutFeeAmount;
     }
   } else {
-    // Separate charges - platform charges separately and pays out to connected account
+    // Separate charges and transfers - platform charges the customer separately from transfer to connected account
+    // https://stripe.com/docs/connect/charges-transfers
     if (feeHandling === 'stripe') {
+      // Stripe handles pricing - fees come from the connected account
       connectedAccountAmount = paymentAmount - stripeFeeAmount - internationalFeeAmount;
       platformAmount = 0; // Platform would charge separately
     } else {
-      // Platform handles pricing
-      connectedAccountAmount = paymentAmount - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount;
-      platformAmount = -stripeFeeAmount - internationalFeeAmount - (feeHandling === 'platform' ? monthlyAccountFee : 0) - payoutFeeAmount; // Platform absorbs the fee
+      // Platform handles pricing - platform absorbs all fees
+      connectedAccountAmount = paymentAmount;
+      platformAmount = -stripeFeeAmount - internationalFeeAmount - monthlyAccountFee - payoutFeeAmount; // Negative because platform is covering the fees
     }
   }
 
@@ -97,6 +104,7 @@ export function calculateStripeFees({
   let instantPayoutFee = 0;
   if (accountType === 'express' && payoutTiming === 'instant') {
     // Express accounts with instant payouts have a 1% fee (min $0.50) for instant payouts
+    // https://stripe.com/docs/payouts#instant-payouts
     instantPayoutFee = Math.max(connectedAccountAmount * 0.01, 0.5);
     connectedAccountAmount -= instantPayoutFee;
   }
