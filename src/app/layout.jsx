@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata = {
   title: "Stripe Connect Fee Simulator",
   description: "Simulate Stripe Connect fee structures and payment flows",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export const viewport = {
