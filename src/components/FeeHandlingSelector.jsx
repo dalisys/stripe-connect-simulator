@@ -44,7 +44,7 @@ export default function FeeHandlingSelector({
         </TooltipProvider>
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <div
           className={`border rounded-md p-2 text-center ${
             disabled.stripe

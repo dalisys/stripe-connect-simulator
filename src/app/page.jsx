@@ -120,10 +120,10 @@ export default function Home() {
   return (
     <div className="max-w-full">
       {/* Configuration Section - Top Row */}
-      <div className="px-6 py-4">
-        <div className="flex flex-wrap">
+      <div className="px-2 sm:px-6 py-3 sm:py-4">
+        <div className="flex flex-col lg:flex-row flex-wrap">
           {/* Account Configuration */}
-          <div className="w-full md:w-[40%] pr-4">
+          <div className="w-full lg:w-[40%] lg:pr-4 mb-6 lg:mb-0">
             <div className="flex justify-between items-center mb-3">
               <h2 className="text-base font-semibold">Account Configuration</h2>
               <ConnectGuideToggle
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           {/* Payment Parameters */}
-          <div className="w-full md:w-[60%]">
+          <div className="w-full lg:w-[60%]">
             <h2 className="text-base font-semibold mb-3">Payment Parameters</h2>
             <PaymentInputForm
               formData={formData}
@@ -164,11 +164,11 @@ export default function Home() {
       </div>
 
       {/* Payment Flow and Fee Breakdown - Side by Side */}
-      <div className="px-6 pb-6 grid grid-cols-1 lg:grid-cols-5 gap-6">
+      <div className="px-2 sm:px-6 pb-4 sm:pb-6 grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6">
         {/* Payment Flow - 3/5 width */}
         <div className="lg:col-span-3">
-          <h2 className="text-base font-semibold mb-4">Payment Flow</h2>
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 h-full">
+          <h2 className="text-base font-semibold mb-2 sm:mb-4">Payment Flow</h2>
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 sm:p-5 h-full">
             <PaymentFlowDiagram
               data={calculatedFees}
               config={formData}
@@ -178,7 +178,9 @@ export default function Home() {
 
         {/* Fee Breakdown - 2/5 width */}
         <div className="lg:col-span-2">
-          <h2 className="text-base font-semibold mb-4">Fee Breakdown</h2>
+          <h2 className="text-base font-semibold mb-2 sm:mb-4">
+            Fee Breakdown
+          </h2>
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden h-full">
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
@@ -186,19 +188,19 @@ export default function Home() {
                   <tr>
                     <th
                       scope="col"
-                      className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-[50%]"
+                      className="px-3 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-[50%]"
                     >
                       Fee Type
                     </th>
                     <th
                       scope="col"
-                      className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider w-[25%]"
+                      className="px-3 sm:px-4 py-2 sm:py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider w-[25%]"
                     >
                       Amount
                     </th>
                     <th
                       scope="col"
-                      className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider w-[25%]"
+                      className="px-3 sm:px-4 py-2 sm:py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider w-[25%]"
                     >
                       Paid By
                     </th>

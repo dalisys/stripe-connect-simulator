@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col bg-gray-50">
           <header className="bg-linear-to-r from-stripe-blue to-indigo-800 text-white py-4 shadow-md">
-            <div className="container mx-auto px-6 flex items-center justify-between">
-              <div>
+            <div className="container mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between">
+              <div className="mb-3 sm:mb-0 text-center sm:text-left">
                 <h1 className="text-xl font-bold">
                   Stripe Connect Fee Simulator
                 </h1>
@@ -43,17 +43,19 @@ export default function RootLayout({ children }) {
             </div>
           </header>
           <main className="grow">
-            <div className="container mx-auto px-6 py-6">{children}</div>
+            <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
+              {children}
+            </div>
           </main>
-          <footer className="py-6 border-t border-gray-200 bg-gray-50">
-            <div className="container mx-auto px-6">
+          <footer className="py-4 sm:py-6 border-t border-gray-200 bg-gray-50">
+            <div className="container mx-auto px-4 sm:px-6">
               <div className="flex flex-col items-center justify-center space-y-3">
                 <p className="text-sm text-gray-600 text-center max-w-2xl">
                   This simulator is for demonstration purposes only and is not
                   affiliated with Stripe. All calculations and data should be
                   verified with Stripe's official documentation and tools.
                 </p>
-                <div className="flex items-center space-x-4 text-xs text-gray-500">
+                <div className="flex flex-wrap justify-center items-center space-x-2 sm:space-x-4 text-xs text-gray-500">
                   <a
                     href="https://stripe.com"
                     target="_blank"
@@ -62,7 +64,7 @@ export default function RootLayout({ children }) {
                   >
                     Stripe Website
                   </a>
-                  <span>•</span>
+                  <span className="hidden sm:inline">•</span>
                   <a
                     href="https://stripe.com/docs/connect"
                     target="_blank"

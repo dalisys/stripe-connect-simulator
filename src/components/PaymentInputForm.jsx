@@ -39,10 +39,10 @@ export default function PaymentInputForm({ formData, onChange }) {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg p-4">
-      <div className="grid grid-cols-2 gap-6">
+    <div className="bg-white rounded-lg p-3 sm:p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {/* Left Column */}
-        <div className="mt-10 space-y-8">
+        <div className="mt-4 sm:mt-10 space-y-6 sm:space-y-8">
           {/* Payment Amount Section */}
           <div className="space-y-1">
             <div className="flex items-center justify-between">

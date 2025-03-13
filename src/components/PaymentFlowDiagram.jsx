@@ -49,6 +49,7 @@ function MoneyFlowEdge({
 
   const amount = data?.amount || "";
   const description = data?.description || "";
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
     <>
@@ -68,7 +69,7 @@ function MoneyFlowEdge({
           className="overflow-visible"
         >
           <div className="flex items-center justify-center">
-            <div className="bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 text-sm font-medium shadow-xs">
+            <div className="bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 text-xs sm:text-sm font-medium shadow-xs">
               ${typeof amount === "number" ? amount.toFixed(2) : amount}
             </div>
           </div>
@@ -102,6 +103,20 @@ export default function PaymentFlowDiagram({ data, config }) {
 
   const reactFlowWrapper = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1200
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const totalStripeFee =
     stripeFeePercent.amount +
@@ -112,34 +127,55 @@ export default function PaymentFlowDiagram({ data, config }) {
 
   // Create positioned nodes based on charge type
   const createNodes = useCallback(() => {
-    // Adjust node positions based on charge type
+    // Base scaling factor for mobile
+    const isMobile = windowWidth < 768;
+    const scale = isMobile ? 0.8 : 1;
+
+    // Adjust node positions based on charge type and screen size
     let customerPos, connectedAccountPos, platformPos, stripePos;
 
     if (chargeType === "direct") {
       // Direct charge layout
-      customerPos = { x: 5, y: 70 };
-      connectedAccountPos = { x: 250, y: 50 };
-      platformPos = { x: 50, y: 350 };
-      // Position Stripe to the right of the platform for direct charges when platform handles fees
-      stripePos =
-        feeHandlingType === "platform"
-          ? { x: 350, y: 350 }
-          : { x: 350, y: 350 };
+      if (isMobile) {
+        customerPos = { x: 0, y: 50 };
+        connectedAccountPos = { x: 250, y: 50 };
+        platformPos = { x: 0, y: 300 };
+        stripePos = { x: 250, y: 300 };
+      } else {
+        customerPos = { x: 5, y: 70 };
+        connectedAccountPos = { x: 250, y: 50 };
+        platformPos = { x: 50, y: 350 };
+        stripePos =
+          feeHandlingType === "platform"
+            ? { x: 350, y: 350 }
+            : { x: 350, y: 350 };
+      }
     } else if (chargeType === "destination") {
-      // Destination charge layout - all nodes in a horizontal line at the top
-      customerPos = { x: 50, y: 70 };
-      platformPos = { x: 350, y: 70 };
-      connectedAccountPos = { x: 650, y: 70 };
-      // Position Stripe directly below the platform for clearer flow
-      stripePos = { x: 550, y: 300 };
+      // Destination charge layout
+      if (isMobile) {
+        customerPos = { x: 0, y: 50 };
+        platformPos = { x: 250, y: 50 };
+        connectedAccountPos = { x: 0, y: 300 };
+        stripePos = { x: 250, y: 300 };
+      } else {
+        customerPos = { x: 50, y: 70 };
+        platformPos = { x: 350, y: 70 };
+        connectedAccountPos = { x: 650, y: 70 };
+        stripePos = { x: 550, y: 300 };
+      }
     } else {
       // separate
-      // Separate charges layout - also in a horizontal line at the top like destination
-      customerPos = { x: 50, y: 70 };
-      platformPos = { x: 350, y: 70 };
-      connectedAccountPos = { x: 650, y: 70 };
-      // Position Stripe directly below the platform for clearer flow
-      stripePos = { x: 550, y: 300 };
+      if (isMobile) {
+        customerPos = { x: 0, y: 50 };
+        platformPos = { x: 250, y: 50 };
+        connectedAccountPos = { x: 0, y: 300 };
+        stripePos = { x: 250, y: 300 };
+      } else {
+        customerPos = { x: 50, y: 70 };
+        platformPos = { x: 350, y: 70 };
+        connectedAccountPos = { x: 650, y: 70 };
+        stripePos = { x: 350, y: 300 };
+      }
     }
 
     return [
@@ -194,7 +230,7 @@ export default function PaymentFlowDiagram({ data, config }) {
           padding: "10px",
           boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
           backgroundColor: "white",
-          width: 140,
+          width: isMobile ? 120 : 140,
         },
       },
 
@@ -284,7 +320,7 @@ export default function PaymentFlowDiagram({ data, config }) {
           padding: "10px",
           boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
           backgroundColor: "white",
-          width: 220,
+          width: isMobile ? 180 : 220,
         },
       },
 
@@ -336,7 +372,7 @@ export default function PaymentFlowDiagram({ data, config }) {
           padding: "10px",
           boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
           backgroundColor: "white",
-          width: 180,
+          width: isMobile ? 140 : 180,
         },
       },
 
@@ -428,7 +464,7 @@ export default function PaymentFlowDiagram({ data, config }) {
           padding: "10px",
           boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
           backgroundColor: "white",
-          width: 200,
+          width: isMobile ? 160 : 200,
         },
       },
     ];
@@ -445,6 +481,7 @@ export default function PaymentFlowDiagram({ data, config }) {
     connectedAccountAmount,
     platformAmount,
     totalAmount,
+    windowWidth,
   ]);
 
   // Get initial nodes
@@ -665,7 +702,13 @@ export default function PaymentFlowDiagram({ data, config }) {
     // If the flow instance exists, fit the view to show all elements
     setTimeout(() => {
       if (reactFlowInstance) {
-        reactFlowInstance.fitView({ padding: 0.2 });
+        // Apply different zoom levels based on screen size
+        const isMobile = window.innerWidth < 768;
+        const padding = isMobile ? 0.5 : 0.2;
+        const defaultZoom = isMobile ? 0.6 : 1;
+
+        reactFlowInstance.setViewport({ x: 0, y: 0, zoom: defaultZoom });
+        reactFlowInstance.fitView({ padding });
       }
     }, 50);
   }, [data, config, createNodes, createEdges, chargeType, feeHandlingType]);
@@ -673,7 +716,13 @@ export default function PaymentFlowDiagram({ data, config }) {
   const onInit = useCallback((instance) => {
     setReactFlowInstance(instance);
     setTimeout(() => {
-      instance.fitView({ padding: 0.2 });
+      // Apply different zoom levels based on screen size
+      const isMobile = window.innerWidth < 768;
+      const padding = isMobile ? 0.5 : 0.2;
+      const defaultZoom = isMobile ? 0.6 : 1;
+
+      instance.setViewport({ x: 0, y: 0, zoom: defaultZoom });
+      instance.fitView({ padding });
     }, 50);
   }, []);
 
@@ -687,16 +736,20 @@ export default function PaymentFlowDiagram({ data, config }) {
       setNodes(initialNodes);
       setEdges(initialEdges);
 
-      // Reset viewport and fit view
-      reactFlowInstance.setViewport({ x: 0, y: 0, zoom: 1 });
+      // Reset viewport and fit view with different zoom levels based on screen size
+      const isMobile = window.innerWidth < 768;
+      const padding = isMobile ? 0.5 : 0.2;
+      const defaultZoom = isMobile ? 0.6 : 1;
+
+      reactFlowInstance.setViewport({ x: 0, y: 0, zoom: defaultZoom });
       setTimeout(() => {
-        reactFlowInstance.fitView({ padding: 0.2 });
+        reactFlowInstance.fitView({ padding });
       }, 50);
     }
   }, [reactFlowInstance, createNodes, createEdges]);
 
   return (
-    <div className="w-full h-[500px] relative">
+    <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] relative">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -707,37 +760,52 @@ export default function PaymentFlowDiagram({ data, config }) {
         edgeTypes={edgeTypes}
         defaultEdgeOptions={edgeOptions}
         fitView
+        minZoom={0.4}
+        maxZoom={2}
+        defaultZoom={windowWidth < 768 ? 0.6 : 1}
         zoomOnScroll={false}
         zoomOnPinch={true}
-        zoomOnDoubleClick={true}
+        panOnScroll={true}
         panOnDrag={true}
-        attributionPosition="bottom-right"
+        nodesDraggable={true}
+        className="react-flow-container"
       >
+        <Background />
         <Controls showInteractive={false} />
-        <Background
-          color="#f1f5f9"
-          gap={16}
-        />
       </ReactFlow>
 
       {/* Reset button moved outside the flow for better clickability */}
-      <div className="absolute top-4 right-4 z-50">
+      <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-50">
         <button
-          className="px-3 py-1.5 bg-blue-600 text-white rounded border shadow-md text-sm hover:bg-blue-700 transition-colors cursor-pointer"
+          className="p-1.5 sm:px-3 sm:py-1.5 bg-blue-600 text-white rounded border shadow-md text-sm hover:bg-blue-700 transition-colors cursor-pointer flex items-center justify-center"
           onClick={resetFlow}
+          aria-label="Reset flow diagram"
         >
-          Reset Flow
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="sm:mr-1"
+          >
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+          </svg>
+          <span className="hidden sm:inline">Reset Flow</span>
         </button>
       </div>
 
       {/* Payout timing indicator for Express accounts */}
       {accountType === "express" && (
-        <div className="absolute top-4 left-4 text-sm flex items-center space-x-2 text-gray-600 bg-white p-2 rounded border shadow-xs z-10">
-          <span>Payout timing:</span>
+        <div className="absolute top-3 left-3 sm:top-4 sm:left-4 text-xs sm:text-sm flex items-center space-x-1 sm:space-x-2 text-gray-600 bg-white p-1.5 sm:p-2 rounded border shadow-xs z-10">
+          <span>Payout:</span>
           <span className="font-medium">
-            {config.payoutTiming === "standard"
-              ? "Standard (2-3 days)"
-              : "Instant (1% fee)"}
+            {config.payoutTiming === "standard" ? "Standard" : "Instant (1%)"}
           </span>
         </div>
       )}
