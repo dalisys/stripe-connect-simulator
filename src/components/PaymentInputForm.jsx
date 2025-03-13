@@ -389,34 +389,6 @@ export default function PaymentInputForm({ formData, onChange }) {
                   </TooltipProvider>
                 </Label>
               </div>
-
-              <div className="flex items-center space-x-2">
-                <Switch
-                  id="monthlyFee"
-                  checked={formData.includeMonthlyFee}
-                  onCheckedChange={(checked) =>
-                    onChange({ includeMonthlyFee: checked })
-                  }
-                />
-                <Label
-                  htmlFor="monthlyFee"
-                  className="text-xs flex items-center gap-1"
-                >
-                  <span>Include monthly fee (prorated)</span>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
-                      </TooltipTrigger>
-                      <TooltipContent className="max-w-sm">
-                        <p className="text-xs">
-                          Monthly fees prorated for this transaction.
-                        </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Label>
-              </div>
             </div>
 
             {/* Payout Timing Section */}
