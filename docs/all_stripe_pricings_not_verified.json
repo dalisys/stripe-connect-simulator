@@ -1,0 +1,5876 @@
+[
+  {
+    "stripe_pricings": [
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "2.9% + 30¢",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "Domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "IC+ pricing",
+            "description": "Design a custom package for businesses with large payments volume or unique business models.",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cards and wallets",
+          "availableFees": {
+            "fee": "1%",
+            "description": "if currency conversion is required",
+            "applicable_when": "Currency conversion"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Link",
+          "availableFees": {
+            "fee": "2.6% + 30¢",
+            "description": "per successful charge for Instant Bank Payments",
+            "applicable_when": "Instant Bank Payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bank debits and transfers",
+          "availableFees": {
+            "fee": "$5.00 cap",
+            "description": "Cap on ACH Direct Debit",
+            "applicable_when": "ACH Direct Debit"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payment methods",
+          "availableFees": {
+            "fee": "Starting at 80¢",
+            "description": "for iDEAL",
+            "applicable_when": "iDEAL"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Buy Now Pay Later",
+          "availableFees": {
+            "fee": "Starting at 5.99% + 30¢",
+            "description": "for Klarna",
+            "applicable_when": "Klarna"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "3¢",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "25¢",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "15¢",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "Custom interchange pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant payouts",
+          "availableFees": {
+            "fee": "Minimum fee of 50¢",
+            "description": "Minimum fee for Instant Payouts",
+            "applicable_when": "Instant Payouts"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "$15.00",
+            "description": "per dispute",
+            "applicable_when": "Disputed payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won using Smart Disputes",
+            "applicable_when": "Smart Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Vault and Forward API",
+          "availableFees": {
+            "fee": "Contact sales",
+            "description": "Contact your Stripe representative or Stripe support",
+            "applicable_when": "Vault and Forward API"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for platforms that deploy their own payments pricing",
+            "applicable_when": "Adaptive Pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "$10.00",
+            "description": "per month",
+            "applicable_when": "Custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "$2.00",
+            "description": "cap per invoice",
+            "applicable_when": "Post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "End-to-end tax compliance solution",
+          "availableFees": {
+            "fee": "Starting at $90.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "Tax compliance"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "50¢",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "API integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "Revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data pipeline",
+          "availableFees": {
+            "fee": "3¢",
+            "description": "per transaction",
+            "applicable_when": "Data pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "5¢",
+            "description": "per screened transaction",
+            "applicable_when": "Screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "2¢",
+            "description": "for accounts with standard pricing",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID document and selfie verification",
+          "availableFees": {
+            "fee": "$1.50",
+            "description": "per verification",
+            "applicable_when": "Verification"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID number lookup",
+          "availableFees": {
+            "fee": "50¢",
+            "description": "per lookup",
+            "applicable_when": "Lookup"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant bank account verifications",
+          "availableFees": {
+            "fee": "$1.50",
+            "description": "per successful instant verification",
+            "applicable_when": "Instant verification"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Balances",
+          "availableFees": {
+            "fee": "10¢",
+            "description": "per successful API call",
+            "applicable_when": "API call"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Account owners",
+          "availableFees": {
+            "fee": "$1.50",
+            "description": "per successful API call",
+            "applicable_when": "API call"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transactions",
+          "availableFees": {
+            "fee": "30¢",
+            "description": "per institution per account holder per month",
+            "applicable_when": "Transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "5¢",
+            "description": "for optional point-to-point-encryption",
+            "applicable_when": "Point-to-point-encryption"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "$249.00",
+            "description": "BBPOS WisePOS E",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card creation",
+          "availableFees": {
+            "fee": "$3.50",
+            "description": "per standard, physical card",
+            "applicable_when": "Standard card"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "$15.00",
+            "description": "per dispute",
+            "applicable_when": "Dispute transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payments",
+          "availableFees": {
+            "fee": "1%",
+            "description": "if currency conversion is required",
+            "applicable_when": "Currency conversion"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Commitments",
+          "availableFees": {
+            "fee": "Included",
+            "description": "No Stripe Climate-specific fees",
+            "applicable_when": "Stripe Climate"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Orders",
+          "availableFees": {
+            "fee": "5%",
+            "description": "Individual suppliers",
+            "applicable_when": "Individual suppliers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Basic",
+          "availableFees": {
+            "fee": "10 USD per month",
+            "description": "Monthly subscription fee for Basic service",
+            "applicable_when": "Monthly subscription for Basic service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Basic",
+          "availableFees": {
+            "fee": "100 USD per year",
+            "description": "Yearly subscription fee for Basic service",
+            "applicable_when": "Yearly subscription for Basic service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Starter",
+          "availableFees": {
+            "fee": "20 USD per month",
+            "description": "Monthly subscription fee for Starter service",
+            "applicable_when": "Monthly subscription for Starter service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Starter",
+          "availableFees": {
+            "fee": "200 USD per year",
+            "description": "Yearly subscription fee for Starter service",
+            "applicable_when": "Yearly subscription for Starter service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Enterprise",
+          "availableFees": {
+            "fee": "30 USD per month",
+            "description": "Monthly subscription fee for Enterprise service",
+            "applicable_when": "Monthly subscription for Enterprise service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Enterprise",
+          "availableFees": {
+            "fee": "300 USD per year",
+            "description": "Yearly subscription fee for Enterprise service",
+            "applicable_when": "Yearly subscription for Enterprise service"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Per-seat",
+          "availableFees": {
+            "fee": "5 USD per seat per month",
+            "description": "Monthly subscription fee per seat",
+            "applicable_when": "Monthly subscription for each seat"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Usage-based",
+          "availableFees": {
+            "fee": "Variable based on usage",
+            "description": "Charges based on customer usage",
+            "applicable_when": "Usage-based billing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.5% + €0.25",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "2.5% + €0.25",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.2% + €0.25",
+            "description": "for all European cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "IC+ pricing",
+            "description": "Design a custom package – available for businesses with large payments volume or unique business models.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.5% + €0.25",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.9% + €0.25",
+            "description": "for premium European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.5% + €0.25",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.25% + €0.25",
+            "description": "for international cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.2% + €0.25",
+            "description": "for all European cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee.",
+            "applicable_when": "Multi-currency settlement"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.03",
+            "description": "per 3D Secure attempt for accounts with custom pricing.",
+            "applicable_when": "3D Secure authentication"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per update for accounts with custom pricing.",
+            "applicable_when": "Card account updater"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing.",
+            "applicable_when": "Adaptive Acceptance"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.15",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "Network tokens"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "for SEPA Direct Debit",
+            "applicable_when": "Local payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€20.00",
+            "description": "per dispute.",
+            "applicable_when": "Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won using Smart Disputes",
+            "applicable_when": "Smart Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€10.00",
+            "description": "per month",
+            "applicable_when": "Custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total",
+            "applicable_when": "Post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€500.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "Pay monthly"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "Pay as you go"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per paid invoice",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€80.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "Pay monthly"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "No-code integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.45",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "API integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.025",
+            "description": "per transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.05",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.07",
+            "description": "per screened transaction",
+            "applicable_when": "Radar for Fraud Teams"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per transaction",
+            "applicable_when": "Chargeback Protection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per verification",
+            "applicable_when": "ID document and selfie verification"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.40",
+            "description": "per lookup",
+            "applicable_when": "ID number lookup"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful instant verification",
+            "applicable_when": "Instant bank account verifications"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.10",
+            "description": "per successful API call",
+            "applicable_when": "Balances"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful API call",
+            "applicable_when": "Account owners"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per institution per account holder per month",
+            "applicable_when": "Transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.4% + €0.10",
+            "description": "per successful charge for EEA cards",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.9% + €0.10",
+            "description": "per successful charge for non-EEA cards",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "+ ongoing costs of running a company",
+            "applicable_when": "Form an LLC or C Corporation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€3.50",
+            "description": "per standard, physical card",
+            "applicable_when": "Card creation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.2% + €0.20",
+            "description": "per transaction after that",
+            "applicable_when": "Card transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per dispute",
+            "applicable_when": "Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1% + €0.30",
+            "description": "for cross-border transactions.",
+            "applicable_when": "International payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3%",
+            "description": "Portfolio",
+            "applicable_when": "Orders"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "5%",
+            "description": "Individual suppliers",
+            "applicable_when": "Orders"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.29",
+            "description": "for iDEAL",
+            "applicable_when": "Local payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.99% + €0.35",
+            "description": "for Klarna",
+            "applicable_when": "Buy Now Pay Later"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "starting fee for platforms that deploy their own payments pricing to earn revenue on each transaction.",
+            "applicable_when": "Vault and Forward API"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.07",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per screened transaction",
+            "applicable_when": "Chargeback Protection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€299.00",
+            "description": "Stripe Reader S700",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€199.00",
+            "description": "BBPOS WisePOS E",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€59.00",
+            "description": "BBPOS WisePad 3",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "One-time + ongoing costs of running a company",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": "Custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "starting fee for platforms that deploy their own payments pricing to earn revenue on each transaction.",
+            "applicable_when": "Vault and Forward API"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for customers presented a conversion fee.",
+            "applicable_when": "Adaptive Pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of Instant Payouts volume",
+            "applicable_when": "Instant payouts"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.50",
+            "description": "Minimum fee for Instant Payouts",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$2.00",
+            "description": "cap per invoice",
+            "applicable_when": "Post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€80.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "Global tax calculation, collection, and reporting"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "Revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": "Sigma"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.025",
+            "description": "per transaction",
+            "applicable_when": "Data pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.05",
+            "description": "per screened transaction",
+            "applicable_when": "Radar’s machine learning"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "One-time fee",
+            "applicable_when": "Form an LLC or C Corporation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1% + €0.30",
+            "description": "for cross-border transactions",
+            "applicable_when": "International payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "3.6%",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "Standard pricing model"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.6%",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "Custom pricing model"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Konbini payments",
+          "availableFees": {
+            "fee": "3.6%",
+            "description": "per successful charge for Konbini payments",
+            "applicable_when": "Accepting Konbini payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bank transfers",
+          "availableFees": {
+            "fee": "1.5%",
+            "description": "per successful charge for bank transfers",
+            "applicable_when": "Accepting B2B payments or large payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payment methods",
+          "availableFees": {
+            "fee": "Starting at ¥55",
+            "description": "for iDEAL",
+            "applicable_when": "Supporting popular payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "¥3",
+            "description": "per 3D Secure attempt",
+            "applicable_when": "For accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "¥25",
+            "description": "per update",
+            "applicable_when": "For accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge",
+            "applicable_when": "For accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "¥15",
+            "description": "per token provisioned",
+            "applicable_when": "For accounts with custom interchange pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "¥1,500",
+            "description": "per dispute",
+            "applicable_when": "For disputed payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won",
+            "applicable_when": "Using Smart Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "$10.00",
+            "description": "per month",
+            "applicable_when": "Using your own domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total, capped at $2.00",
+            "applicable_when": "Generating invoices after a one-time purchase"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for presenting prices in local currencies",
+            "applicable_when": "For global customers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Billing",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "Includes Billing transactions processed on and off Stripe"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per paid invoice",
+            "applicable_when": "For online invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tax",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction where you’re registered to collect taxes",
+            "applicable_when": "For tax collection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tax integration",
+          "availableFees": {
+            "fee": "¥65",
+            "description": "per transaction where you’re registered to collect taxes",
+            "applicable_when": "Integrating Tax with custom checkout"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue Recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "For revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "¥1,000",
+            "description": "per month, plus a fee per charge starting at ¥2.25",
+            "applicable_when": "For data analysis"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "¥3",
+            "description": "per transaction",
+            "applicable_when": "For data integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "¥5",
+            "description": "per screened transaction",
+            "applicable_when": "For fraud protection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "¥7",
+            "description": "per screened transaction",
+            "applicable_when": "For advanced fraud protection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID document verification",
+          "availableFees": {
+            "fee": "¥300",
+            "description": "per verification",
+            "applicable_when": "For ID verification"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID number lookup",
+          "availableFees": {
+            "fee": "¥100",
+            "description": "per lookup",
+            "applicable_when": "For validating ID numbers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "$500.00",
+            "description": "one-time fee plus ongoing costs",
+            "applicable_when": "For forming a company"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Commitments",
+          "availableFees": {
+            "fee": "Included",
+            "description": "No Stripe Climate-specific fees",
+            "applicable_when": "For carbon removal commitments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Orders",
+          "availableFees": {
+            "fee": "3%",
+            "description": "for Portfolio, 5% for Individual suppliers",
+            "applicable_when": "For carbon removal orders"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "3.6% + MXN$3.00",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "for domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.6% + MXN$3.00",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "for domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "3.6% + MXN$3.00",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "for domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "for international cards",
+            "applicable_when": "for international cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": "if currency conversion is required"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "OXXO payments",
+          "availableFees": {
+            "fee": "3.6% + MXN$3.00",
+            "description": "per successful charge for OXXO payments",
+            "applicable_when": "for OXXO payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Installments",
+          "availableFees": {
+            "fee": "Starting at 5%",
+            "description": "for 3 months",
+            "applicable_when": "for 3 months installments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bank transfers",
+          "availableFees": {
+            "fee": "MXN$7.00",
+            "description": "per transfer",
+            "applicable_when": "for bank transfers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payment methods",
+          "availableFees": {
+            "fee": "3.6% + MXN$3.00",
+            "description": "for OXXO",
+            "applicable_when": "for OXXO payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "MXN$0.50",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "MXN$5.00",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "MXN$2.75",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "for accounts with custom interchange pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "MXN$150.00",
+            "description": "per lost dispute",
+            "applicable_when": "for lost disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won using Smart Disputes",
+            "applicable_when": "for Smart Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting conversion fee",
+            "applicable_when": "for adaptive pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "$10.00",
+            "description": "per month",
+            "applicable_when": "for custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total, $2.00 cap per invoice",
+            "applicable_when": "for post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Connect pricing",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "starting fee for platforms that deploy their own payments pricing",
+            "applicable_when": "for platforms"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Billing pricing",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "for billing volume"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing pricing",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per paid invoice",
+            "applicable_when": "for paid invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "for revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "MXN$225.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": "for Sigma"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "MXN$0.50",
+            "description": "per transaction",
+            "applicable_when": "for Data Pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "MXN$0.95",
+            "description": "per screened transaction",
+            "applicable_when": "for screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "MXN$1.30",
+            "description": "per screened transaction",
+            "applicable_when": "for screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "$500.00",
+            "description": "one-time cost plus ongoing costs of running a company",
+            "applicable_when": "for Atlas"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Checkout",
+          "availableFees": {
+            "fee": "$10.00",
+            "description": "per month",
+            "applicable_when": "for Stripe Checkout"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "for local payment methods",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "Pay as you go"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.40",
+            "description": "per lookup",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful instant verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.10",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per institution per account holder per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time + ongoing costs of running a company",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3%",
+            "description": "Portfolio",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "5%",
+            "description": "Individual suppliers",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "3.65% + ฿10.00",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.65% + ฿10.00",
+            "description": "for domestic cards",
+            "applicable_when": "domestic cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "4.75% + ฿10.00",
+            "description": "for international cards",
+            "applicable_when": "international cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "PromptPay",
+          "availableFees": {
+            "fee": "1.65%",
+            "description": "per successful PromptPay transfer",
+            "applicable_when": "PromptPay"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Refund for PromptPay",
+          "availableFees": {
+            "fee": "฿10.00",
+            "description": "per refund",
+            "applicable_when": "PromptPay refund"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "Included",
+            "description": "A small fee is charged per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": "3D Secure attempts"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "Included",
+            "description": "Automatically update expired or renewed card information for saved customers",
+            "applicable_when": "card updates"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "฿8.80",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": "card updates"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "Included",
+            "description": "Machine learning models that help increase revenue for your business by improving authorisation rates in real-time",
+            "applicable_when": "Adaptive Acceptance"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": "successful card charge"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "Included",
+            "description": "Secure payment credentials that help increase revenue and improve the customer experience",
+            "applicable_when": "network tokens"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "฿5.00",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "token provisioned"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "฿500.00",
+            "description": "per dispute",
+            "applicable_when": "disputed payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "Included",
+            "description": "Present prices in local currencies to your customers globally",
+            "applicable_when": "Adaptive Pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": "using custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total",
+            "applicable_when": "post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "US$2.00",
+            "description": "cap per invoice",
+            "applicable_when": "post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue Recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "Starting at ฿300.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": "Sigma"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "฿0.60",
+            "description": "per charge starting at",
+            "applicable_when": "charges"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "฿2.00",
+            "description": "per screened transaction",
+            "applicable_when": "screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "฿3.00",
+            "description": "per screened transaction",
+            "applicable_when": "screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "฿1.00",
+            "description": "for accounts with standard pricing",
+            "applicable_when": "screened transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "฿0.75",
+            "description": "per transaction",
+            "applicable_when": "transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "One-time plus ongoing costs of running a company",
+            "applicable_when": "forming a company"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Checkout and Payment Links",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": "Checkout and Payment Links"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom pricing",
+          "availableFees": {
+            "fee": "",
+            "description": "Custom pricing available for companies with large payments volume, high value transactions, or unique business models",
+            "applicable_when": "custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre standard",
+          "availableFees": {
+            "fee": "2,9 % + 0,30 CHF",
+            "description": "pour les cartes émises en Suisse",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre standard",
+          "availableFees": {
+            "fee": "3,25 % + 0,30 CHF",
+            "description": "pour les cartes internationales",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre standard",
+          "availableFees": {
+            "fee": "2,6 % + 0,30 CHF",
+            "description": "pour les cartes émises en Suisse",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre personnalisée",
+          "availableFees": {
+            "fee": "Tarifs IC+",
+            "description": "pour les entreprises avec un modèle économique unique ou un volume de paiements important",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre personnalisée",
+          "availableFees": {
+            "fee": "3,25 % + 0,30 CHF",
+            "description": "pour les cartes internationales",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Offre personnalisée",
+          "availableFees": {
+            "fee": "2 %",
+            "description": "en cas de conversion de devises",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Link",
+          "availableFees": {
+            "fee": "2,6 % + 0,30 CHF",
+            "description": "pour les cartes émises en Suisse",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Règlement multidevise",
+          "availableFees": {
+            "fee": "1 %",
+            "description": "du volume des virements ou des frais minimum",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Authentification 3D Secure",
+          "availableFees": {
+            "fee": "0,03 CHF",
+            "description": "par tentative 3D Secure pour les comptes dotés d'une tarification personnalisée",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Outil de mise à jour de carte",
+          "availableFees": {
+            "fee": "0,25 CHF",
+            "description": "par mise à jour pour les comptes dotés d'une tarification personnalisée",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Fonctionnalité Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0,08 %",
+            "description": "pour chaque paiement par carte réussi pour les comptes dotés d'une tarification personnalisée",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tokens de réseau",
+          "availableFees": {
+            "fee": "0,15 CHF",
+            "description": "par token mis en service pour les comptes aux frais d'interchange personnalisés",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Moyens de paiement locaux",
+          "availableFees": {
+            "fee": "0,40 CHF",
+            "description": "par Prélèvement SEPA",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Gestion des litiges",
+          "availableFees": {
+            "fee": "20,00 CHF",
+            "description": "par litige perdu",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30 %",
+            "description": "du montant contesté remporté grâce à Smart Disputes",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "API Vault and Forward",
+          "availableFees": {
+            "fee": "Contact sales",
+            "description": "Contactez votre représentant Stripe",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Fonctionnalité Adaptive Pricing",
+          "availableFees": {
+            "fee": "Inclus",
+            "description": "Aucuns frais spécifiques à Checkout",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Domaine personnalisé",
+          "availableFees": {
+            "fee": "10,00 $US",
+            "description": "par mois",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Factures post-paiement",
+          "availableFees": {
+            "fee": "0,4 %",
+            "description": "du montant total, 2,00 $US max. par facture",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Facturation ponctuelle",
+          "availableFees": {
+            "fee": "500,00 $US",
+            "description": "+ les coûts récurrents liés à l'exploitation d'une entreprise",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Paiement mensuel",
+          "availableFees": {
+            "fee": "À partir de 570,00 CHF",
+            "description": "par mois, contrat d'un an",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Paiement à l'utilisation",
+          "availableFees": {
+            "fee": "0,7 %",
+            "description": "du volume traité via Billing",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Calcul, collecte et versement des taxes",
+          "availableFees": {
+            "fee": "À partir de 80,00 CHF",
+            "description": "par mois, contrat d'un an",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Calcul, collecte et versement des taxes",
+          "availableFees": {
+            "fee": "0,5 %",
+            "description": "par transaction, dans les pays où votre entreprise est légalement autorisée à percevoir des taxes",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Calcul, collecte et versement des taxes",
+          "availableFees": {
+            "fee": "0,50 CHF",
+            "description": "par transaction, dans les pays où votre entreprise est légalement autorisée à percevoir des taxes",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Calcul, collecte et versement des taxes",
+          "availableFees": {
+            "fee": "0,25 %",
+            "description": "du volume",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "À partir de 10,00 CHF",
+            "description": "par mois, frais d'infrastructure",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "0,025 CHF",
+            "description": "par transaction",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar",
+          "availableFees": {
+            "fee": "0,05 CHF",
+            "description": "par transaction contrôlée",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "0,07 CHF",
+            "description": "par transaction contrôlée, 0,02 CHF pour les comptes soumis à la tarification standard",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Chargeback Protection",
+          "availableFees": {
+            "fee": "0,4 %",
+            "description": "par transaction contrôlée",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Vérification des pièces d'identité et des selfies",
+          "availableFees": {
+            "fee": "1,25 CHF",
+            "description": "par vérification",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Recherche par numéro de pièce d'identité",
+          "availableFees": {
+            "fee": "0,50 CHF",
+            "description": "par recherche",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Vérifications instantanées des comptes bancaires",
+          "availableFees": {
+            "fee": "1,25 CHF",
+            "description": "par vérification instantanée réussie",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Soldes",
+          "availableFees": {
+            "fee": "0,10 CHF",
+            "description": "par appel à l'API réussi",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Titulaires de compte",
+          "availableFees": {
+            "fee": "1,25 CHF",
+            "description": "par appel à l'API réussi",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transactions",
+          "availableFees": {
+            "fee": "0,35 CHF",
+            "description": "par établissement, par titulaire de compte et par mois",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Prise en charge des paiements par TPE",
+          "availableFees": {
+            "fee": "1,4 % + 0,10 CHF",
+            "description": "par paiement réussi pour les cartes de l'EEE",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Prise en charge des paiements par TPE",
+          "availableFees": {
+            "fee": "2,9 % + 0,10 CHF",
+            "description": "par paiement réussi pour les cartes hors EEE",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Lecteurs de cartes",
+          "availableFees": {
+            "fee": "329,00 CHF",
+            "description": "pour le lecteur Stripe S700",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Lecteurs de cartes",
+          "availableFees": {
+            "fee": "199,00 CHF",
+            "description": "pour le lecteur BBPOS WisePOS E",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Lecteurs de cartes",
+          "availableFees": {
+            "fee": "59,00 CHF",
+            "description": "pour le lecteur BBPOS WisePad 3",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.5% + 20p",
+            "description": "for standard Gibraltar cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "2.5% + 20p",
+            "description": "for EU Cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.2% + 20p",
+            "description": "for all Gibraltar cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.5% + 20p",
+            "description": "for standard Gibraltar cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.9% + 20p",
+            "description": "for premium Gibraltar cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.5% + 20p",
+            "description": "for European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.25% + 20p",
+            "description": "for international cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.2% + 20p",
+            "description": "for all Gibraltar cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3p",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "25p",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "12p",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "30p",
+            "description": "for SEPA Direct Debit",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "£20.00",
+            "description": "per lost dispute",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won using Smart Disputes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for platforms that deploy their own payments pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "£10.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2p",
+            "description": "per transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "4p",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "6p",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time fee for forming an LLC or C Corporation",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month for Stripe Checkout payment page",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.03",
+            "description": "per 3D Secure attempt for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per update for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.15",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "for SEPA Direct Debit",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.99% + €0.35",
+            "description": "for Klarna",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€20.00",
+            "description": "per dispute.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€10.00",
+            "description": "per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "starting fee for platforms that deploy their own payments pricing to earn revenue on each transaction.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€500.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€80.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.45",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "+ ongoing costs of running a company",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€3.50",
+            "description": "per standard, physical card",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.2% + €0.20",
+            "description": "per transaction after that",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per dispute*",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1% + €0.30",
+            "description": "for cross-border transactions.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "Volume discounts",
+            "description": "",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "Multi-product discounts",
+            "description": "",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "Country-specific rates",
+            "description": "",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "1.5% + €0.25",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "1.9% + €0.25",
+            "description": "for premium European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International card payments",
+          "availableFees": {
+            "fee": "2.5% + €0.25",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International card payments",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International card payments",
+          "availableFees": {
+            "fee": "3.25% + €0.25",
+            "description": "for international cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Link",
+          "availableFees": {
+            "fee": "1.2% + €0.25",
+            "description": "for all European cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Multi-currency settlement",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "€0.03",
+            "description": "per 3D Secure attempt for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per update for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "€0.15",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Local payment methods",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "SEPA Direct Debit",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Buy Now Pay Later",
+          "availableFees": {
+            "fee": "4.99% + €0.40",
+            "description": "for Klarna",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "€20.00",
+            "description": "per lost dispute.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won using Smart Disputes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Vault and Forward API",
+          "availableFees": {
+            "fee": "",
+            "description": "Contact your Stripe representative or Stripe support.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for platforms that deploy their own payments pricing to earn revenue on each transaction.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant payouts",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of Instant Payouts volume, Minimum fee of €0.50",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total, US$2.00 cap per invoice",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "€80.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "€0.45",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "€0.025",
+            "description": "per transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "€0.05",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "€0.07",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Chargeback Protection",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID document and selfie verification",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID number lookup",
+          "availableFees": {
+            "fee": "€0.40",
+            "description": "per lookup",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant bank account verifications",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful instant verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Balances",
+          "availableFees": {
+            "fee": "€0.10",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Account owners",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transactions",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per institution per account holder per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card creation",
+          "availableFees": {
+            "fee": "€3.50",
+            "description": "per standard, physical card",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card transactions",
+          "availableFees": {
+            "fee": "0.2% + €0.20",
+            "description": "per transaction after that",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per dispute",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payments",
+          "availableFees": {
+            "fee": "1% + €0.30",
+            "description": "for cross-border transactions.",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payments",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Commitments",
+          "availableFees": {
+            "fee": "",
+            "description": "No Stripe Climate-specific fees",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Orders",
+          "availableFees": {
+            "fee": "3%",
+            "description": "Portfolio",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Orders",
+          "availableFees": {
+            "fee": "5%",
+            "description": "Individual suppliers",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard Pricing",
+          "availableFees": {
+            "fee": "1.5% + CHF0.30",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard Pricing",
+          "availableFees": {
+            "fee": "2.5% + CHF0.30",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "1.5% + CHF0.30",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "1.9% + CHF0.30",
+            "description": "for premium European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "2.5% + CHF0.30",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "3.25% + CHF0.30",
+            "description": "for international cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "CHF0.03",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "CHF0.25",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Pricing",
+          "availableFees": {
+            "fee": "CHF0.15",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Local Payment Methods",
+          "availableFees": {
+            "fee": "CHF0.40",
+            "description": "for iDEAL and Bancontact",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "CHF20.00",
+            "description": "per dispute",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom Domain",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment Invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment Invoices",
+          "availableFees": {
+            "fee": "US$2.00",
+            "description": "cap per invoice",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Billing",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per paid invoice",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue Recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "CHF10.00",
+            "description": "per month, infrastructure fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "CHF0.02",
+            "description": "per charge starting at",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "CHF0.025",
+            "description": "per transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s Machine Learning",
+          "availableFees": {
+            "fee": "CHF0.05",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "CHF0.07",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant Bank Account Verifications",
+          "availableFees": {
+            "fee": "CHF1.25",
+            "description": "per successful instant verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Balances",
+          "availableFees": {
+            "fee": "CHF0.10",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Account Owners",
+          "availableFees": {
+            "fee": "CHF1.25",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transactions",
+          "availableFees": {
+            "fee": "CHF0.35",
+            "description": "per institution per account holder per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "IC+ pricing",
+            "description": "for businesses with large payments volume or unique business models",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee",
+            "applicable_when": "for multi-currency settlement"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.03",
+            "description": "per 3D Secure attempt",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per update",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge",
+            "applicable_when": "for accounts with custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.15",
+            "description": "per token provisioned",
+            "applicable_when": "for accounts with custom interchange pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "for SEPA Direct Debit",
+            "applicable_when": "for local payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.99% + €0.35",
+            "description": "for Klarna",
+            "applicable_when": "for Buy Now Pay Later"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€20.00",
+            "description": "per dispute",
+            "applicable_when": "for disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "30%",
+            "description": "of the disputed amount won",
+            "applicable_when": "using Smart Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "starting fee for platforms",
+            "applicable_when": "that deploy their own payments pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€500.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "for subscription and cancellation terms"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "for pay as you go"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€80.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "for global tax calculation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction",
+            "applicable_when": "for no-code integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.45",
+            "description": "per transaction",
+            "applicable_when": "for API integration"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "for revenue recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.025",
+            "description": "per transaction",
+            "applicable_when": "for data pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.05",
+            "description": "per screened transaction",
+            "applicable_when": "for Radar’s machine learning"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.07",
+            "description": "per screened transaction",
+            "applicable_when": "for Radar for Fraud Teams"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per screened transaction",
+            "applicable_when": "for Chargeback Protection"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per verification",
+            "applicable_when": "for ID document and selfie verification"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.40",
+            "description": "per lookup",
+            "applicable_when": "for ID number lookup"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful instant verification",
+            "applicable_when": "for instant bank account verifications"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.10",
+            "description": "per successful API call",
+            "applicable_when": "for balances"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€1.25",
+            "description": "per successful API call",
+            "applicable_when": "for account owners"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.25",
+            "description": "per institution per account holder per month",
+            "applicable_when": "for transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.4% + €0.10",
+            "description": "per successful charge for EEA cards",
+            "applicable_when": "for in-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2.9% + €0.10",
+            "description": "per successful charge for non-EEA cards",
+            "applicable_when": "for in-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€299.00",
+            "description": "for Stripe Reader S700",
+            "applicable_when": "for card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€199.00",
+            "description": "for BBPOS WisePOS E",
+            "applicable_when": "for card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€59.00",
+            "description": "for BBPOS WisePad 3",
+            "applicable_when": "for card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time",
+            "applicable_when": "for forming an LLC or C Corporation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€3.50",
+            "description": "per standard, physical card",
+            "applicable_when": "for card creation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.2% + €0.20",
+            "description": "per transaction",
+            "applicable_when": "for card transactions after €500,000"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€15.00",
+            "description": "per month",
+            "applicable_when": "for Stripe Checkout"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3%",
+            "description": "for Portfolio",
+            "applicable_when": "for carbon removal"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "5%",
+            "description": "for Individual suppliers",
+            "applicable_when": "for carbon removal"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cartões padrão do Espaço Econômico Europeu",
+          "availableFees": {
+            "fee": "1,5% + € 0,25",
+            "description": "Tarifa para cartões padrão do Espaço Econômico Europeu",
+            "applicable_when": "Para pagamentos com cartões padrão do Espaço Econômico Europeu."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cartões do Reino Unido",
+          "availableFees": {
+            "fee": "2,5% + € 0,25",
+            "description": "Tarifa para cartões do Reino Unido",
+            "applicable_when": "Para pagamentos com cartões do Reino Unido."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Todos os cartões europeus",
+          "availableFees": {
+            "fee": "1,2% + € 0,25",
+            "description": "Tarifa para todos os cartões europeus",
+            "applicable_when": "Para pagamentos com todos os cartões europeus."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cartões premium do Espaço Econômico Europeu",
+          "availableFees": {
+            "fee": "1,9% + € 0,25",
+            "description": "Tarifa para cartões premium do Espaço Econômico Europeu",
+            "applicable_when": "Para pagamentos com cartões premium do Espaço Econômico Europeu."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cartões internacionais",
+          "availableFees": {
+            "fee": "3,25% + € 0,25",
+            "description": "Tarifa para cartões internacionais",
+            "applicable_when": "Para pagamentos com cartões internacionais."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Conversão de moeda",
+          "availableFees": {
+            "fee": "2%",
+            "description": "Tarifa adicional se for necessário converter a moeda",
+            "applicable_when": "Para pagamentos que requerem conversão de moeda."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Link de checkout",
+          "availableFees": {
+            "fee": "1,2% + € 0,25",
+            "description": "Tarifa para todos os cartões europeus",
+            "applicable_when": "Para pagamentos via link de checkout."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Liquidação multimoedas",
+          "availableFees": {
+            "fee": "1%",
+            "description": "Tarifa do volume de repasses ou uma tarifa mínima",
+            "applicable_when": "Para liquidações em múltiplas moedas."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Autenticação 3D Secure",
+          "availableFees": {
+            "fee": "€ 0,03",
+            "description": "Tarifa por tentativa de autenticação do 3D Secure",
+            "applicable_when": "Para contas com plano de preços personalizado."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atualizador de cartões",
+          "availableFees": {
+            "fee": "€ 0,25",
+            "description": "Tarifa por atualização de cartão",
+            "applicable_when": "Para contas com plano de preços personalizado."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0,08%",
+            "description": "Tarifa por cobrança de cartão bem-sucedida",
+            "applicable_when": "Para contas com plano de preços personalizado."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tokens de rede",
+          "availableFees": {
+            "fee": "€ 0,15",
+            "description": "Tarifa por token fornecido",
+            "applicable_when": "Para contas com preços de intercâmbio personalizados."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Formas de pagamento locais",
+          "availableFees": {
+            "fee": "€ 0,35",
+            "description": "Tarifa para débito automático SEPA",
+            "applicable_when": "Para pagamentos com formas de pagamento locais."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Contestações",
+          "availableFees": {
+            "fee": "€ 20,00",
+            "description": "Tarifa por contestação",
+            "applicable_when": "Para pagamentos contestados."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Smart Disputes",
+          "availableFees": {
+            "fee": "30%",
+            "description": "Tarifa sobre o valor contestado ganho usando Smart Disputes",
+            "applicable_when": "Para contestações qualificadas."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "API Vault and Forward",
+          "availableFees": {
+            "fee": "",
+            "description": "Contact sales",
+            "applicable_when": "Para acesso ao Vault e Forward API."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "Tarifa de conversão para preços adaptativos",
+            "applicable_when": "Para preços diretamente na moeda local."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant Payouts",
+          "availableFees": {
+            "fee": "1%",
+            "description": "Tarifa do volume de Instant Payouts",
+            "applicable_when": "Para repasses instantâneos."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Domínio personalizado",
+          "availableFees": {
+            "fee": "US$ 10,00",
+            "description": "Tarifa mensal para uso de domínio personalizado",
+            "applicable_when": "Para hospedagem de página de pagamentos."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Faturas pós-pagamento",
+          "availableFees": {
+            "fee": "0,4%",
+            "description": "Tarifa sobre o total da transação",
+            "applicable_when": "Para geração de faturas pós-pagamento."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Cálculo, recolhimento e relatórios de impostos globais",
+          "availableFees": {
+            "fee": "€ 80,00",
+            "description": "Tarifa mensal para serviços de impostos",
+            "applicable_when": "Para integração de impostos globais."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Taxas de processamento de pagamentos",
+          "availableFees": {
+            "fee": "0,5%",
+            "description": "Tarifa por transação para integração no-code",
+            "applicable_when": "Para integração de impostos."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Machine learning do Radar",
+          "availableFees": {
+            "fee": "€ 0,05",
+            "description": "Tarifa por transação rastreada",
+            "applicable_when": "Para proteção contra fraudes."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Chargeback Protection",
+          "availableFees": {
+            "fee": "0,4%",
+            "description": "Tarifa por transação para proteção contra contestações",
+            "applicable_when": "Para proteção contra contestações."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Verificação de documento de identificação e selfie",
+          "availableFees": {
+            "fee": "€ 1,25",
+            "description": "Tarifa por verificação de documento",
+            "applicable_when": "Para verificação de identidade."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Busca de números de documentos de identificação",
+          "availableFees": {
+            "fee": "€ 0,40",
+            "description": "Tarifa por busca de número de documento",
+            "applicable_when": "Para validação de documentos."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Verificações instantâneas de contas bancárias",
+          "availableFees": {
+            "fee": "€ 1,25",
+            "description": "Tarifa por verificação instantânea",
+            "applicable_when": "Para verificação de contas bancárias."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Saldos",
+          "availableFees": {
+            "fee": "€ 0,10",
+            "description": "Tarifa por chamada de API bem-sucedida",
+            "applicable_when": "Para acesso a saldos."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Titulares de conta",
+          "availableFees": {
+            "fee": "€ 1,25",
+            "description": "Tarifa por verificação de titularidade",
+            "applicable_when": "Para verificação de titularidade de conta."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transações",
+          "availableFees": {
+            "fee": "€ 0,25",
+            "description": "Tarifa por instituição, por titular de conta, por mês",
+            "applicable_when": "Para assinatura de feed de transações."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Processamento de cartão presencial",
+          "availableFees": {
+            "fee": "1,4% + € 0,10",
+            "description": "Tarifa por cobrança bem-sucedida para cartões do EEE",
+            "applicable_when": "Para pagamentos presenciais."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Máquinas de cartão",
+          "availableFees": {
+            "fee": "€ 299,00",
+            "description": "Tarifa para Stripe Reader S700",
+            "applicable_when": "Para aquisição de máquinas de cartão."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Criação de cartões",
+          "availableFees": {
+            "fee": "€ 3,50",
+            "description": "Tarifa por cartão físico padrão",
+            "applicable_when": "Para emissão de cartões."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Contestações",
+          "availableFees": {
+            "fee": "€ 15,00",
+            "description": "Tarifa por contestação",
+            "applicable_when": "Para disputas de transações."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Pagamentos internacionais",
+          "availableFees": {
+            "fee": "1% + € 0,30",
+            "description": "Tarifa para transações internacionais",
+            "applicable_when": "Para pagamentos internacionais."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Compromissos",
+          "availableFees": {
+            "fee": "",
+            "description": "Incluso",
+            "applicable_when": "Para compromissos de remoção de carbono."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Pedidos",
+          "availableFees": {
+            "fee": "3%",
+            "description": "Tarifa para pedidos de remoção de carbono",
+            "applicable_when": "Para pedidos de remoção de carbono."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": "for international card payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3.25% + €0.25",
+            "description": "for international cards",
+            "applicable_when": "if currency conversion is required"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "4.99% + €0.40",
+            "description": "for Klarna",
+            "applicable_when": "for Buy Now Pay Later"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€10.00",
+            "description": "per month",
+            "applicable_when": "for custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total",
+            "applicable_when": "for post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€500.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "for subscription"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.05",
+            "description": "per screened transaction",
+            "applicable_when": "for Radar's machine learning"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1% + €0.30",
+            "description": "for cross-border transactions",
+            "applicable_when": "for international payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "3%",
+            "description": "for Portfolio",
+            "applicable_when": "for orders"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "5%",
+            "description": "for Individual suppliers",
+            "applicable_when": "for orders"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "3.4% + S$0.50",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "IC+ pricing",
+            "description": "Design a custom package for businesses with large payments volume or unique business models",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "3.4% + S$0.50",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "All cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "3.4% + $0.50",
+            "description": "per successful card charge when settled in USD",
+            "applicable_when": "All cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "for international cards",
+            "applicable_when": "All cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": "All cards"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Digital wallets",
+          "availableFees": {
+            "fee": "2.2% + S$0.35",
+            "description": "for Apple Pay and Google Pay",
+            "applicable_when": "Digital wallets"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Digital wallets",
+          "availableFees": {
+            "fee": "2.2% + S$0.35",
+            "description": "for WeChat Pay",
+            "applicable_when": "Digital wallets"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Digital wallets",
+          "availableFees": {
+            "fee": "3.3%",
+            "description": "for GrabPay",
+            "applicable_when": "Digital wallets"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bank redirects",
+          "availableFees": {
+            "fee": "1.3%",
+            "description": "per successful PayNow transfer",
+            "applicable_when": "Bank redirects"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International payment methods",
+          "availableFees": {
+            "fee": "Starting at S$1.00",
+            "description": "for iDEAL",
+            "applicable_when": "International payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "S$0.04",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": "3D Secure authentication"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "S$0.35",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": "Card account updater"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "0.08%",
+            "description": "per successful card charge for accounts with custom pricing",
+            "applicable_when": "Adaptive Acceptance"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "S$0.20",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "Network tokens"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant payouts",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of Instant Payouts volume, Minimum fee of S$0.50",
+            "applicable_when": "Instant payouts"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "USD payouts",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of USD payout volume, Minimum fee of $5.00",
+            "applicable_when": "USD payouts"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "S$15.00",
+            "description": "per dispute",
+            "applicable_when": "Disputes"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "on transaction total, $2.00 cap per invoice",
+            "applicable_when": "Post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Connect pricing",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "starting fee for platforms that deploy their own payments pricing",
+            "applicable_when": "Connect pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Billing",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "Billing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "per paid invoice",
+            "applicable_when": "Invoicing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tax",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "Tax"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Tax",
+          "availableFees": {
+            "fee": "S$0.70",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "Tax"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "S$15.00",
+            "description": "per month, infrastructure fee, Plus a fee per charge starting at S$0.03",
+            "applicable_when": "Sigma"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data pipeline",
+          "availableFees": {
+            "fee": "S$0.03",
+            "description": "per transaction",
+            "applicable_when": "Data pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "S$0.08",
+            "description": "per screened transaction",
+            "applicable_when": "Radar’s machine learning"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "S$0.10",
+            "description": "per screened transaction, S$0.02 for accounts with standard pricing",
+            "applicable_when": "Radar for Fraud Teams"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "3.4% + S$0.50",
+            "description": "per successful charge for domestic cards",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "for international cards",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "S$0.15",
+            "description": "per authorization for Tap to Pay",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "S$0.07",
+            "description": "per authorization for optional point-to-point-encryption",
+            "applicable_when": "In-person card processing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "S$449.00",
+            "description": "Stripe Reader S700, Excl. VAT",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "S$299.00",
+            "description": "BBPOS WisePOS E, Excl. VAT",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "S$89.00",
+            "description": "BBPOS WisePad 3, Excl. VAT",
+            "applicable_when": "Card readers"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "$500.00",
+            "description": "One-time + ongoing costs of running a company",
+            "applicable_when": "Atlas"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Checkout and Payment Links",
+          "availableFees": {
+            "fee": "$10.00",
+            "description": "per month",
+            "applicable_when": "Checkout and Payment Links"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "3% + RM1.00",
+            "description": "per successful card charge or successful bank transaction",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "IC+ pricing",
+            "description": "Design a custom package – available for businesses with large payments volume or unique business models.",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Credit and debit cards",
+          "availableFees": {
+            "fee": "2%",
+            "description": "if currency conversion is required",
+            "applicable_when": "Currency conversion"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bank debits and transfers",
+          "availableFees": {
+            "fee": "3% + RM1.00",
+            "description": "FPX",
+            "applicable_when": "FPX"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Digital wallets",
+          "availableFees": {
+            "fee": "3%",
+            "description": "Alipay",
+            "applicable_when": "Alipay"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "RM0.10",
+            "description": "per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "RM1.10",
+            "description": "per update for accounts with custom pricing",
+            "applicable_when": "Custom pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "RM0.65",
+            "description": "per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": "Custom interchange pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "RM90.00",
+            "description": "per dispute",
+            "applicable_when": "Disputed payments"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "2%",
+            "description": "starting fee for customers presented a conversion fee",
+            "applicable_when": "Adaptive Pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom domain",
+          "availableFees": {
+            "fee": "US$10.00",
+            "description": "per month",
+            "applicable_when": "Custom domain"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Post-payment invoices",
+          "availableFees": {
+            "fee": "US$2.00",
+            "description": "cap per invoice",
+            "applicable_when": "Post-payment invoices"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Billing",
+          "availableFees": {
+            "fee": "0.7%",
+            "description": "of Billing volume",
+            "applicable_when": "Billing transactions"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Revenue Recognition",
+          "availableFees": {
+            "fee": "0.25%",
+            "description": "of volume",
+            "applicable_when": "Revenue Recognition"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "RM0.09",
+            "description": "per charge starting at",
+            "applicable_when": "Sigma"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "RM0.10",
+            "description": "per transaction",
+            "applicable_when": "Data Pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "RM0.23",
+            "description": "per screened transaction",
+            "applicable_when": "Radar’s machine learning"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "RM0.09",
+            "description": "for accounts with standard pricing",
+            "applicable_when": "Standard pricing"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "RM0.22",
+            "description": "per authorisation for optional point-to-point-encryption",
+            "applicable_when": "Point-to-point-encryption"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "RM279.00",
+            "description": "BBPOS WisePad 3",
+            "applicable_when": "BBPOS WisePad 3"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time + ongoing costs of running a company",
+            "applicable_when": "Atlas"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.5% + 1.00zł",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "2.5% + 1.00zł",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Standard",
+          "availableFees": {
+            "fee": "1.2% + 1.00zł",
+            "description": "for all European cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.5% + 1.00zł",
+            "description": "for standard European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "1.9% + 1.00zł",
+            "description": "for premium European Economic Area cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "BLIK payments",
+          "availableFees": {
+            "fee": "1.6% + 1.00zł",
+            "description": "",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International card payments",
+          "availableFees": {
+            "fee": "2.5% + 1.00zł",
+            "description": "for UK cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "International card payments",
+          "availableFees": {
+            "fee": "3.25% + 1.00zł",
+            "description": "for international cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Link",
+          "availableFees": {
+            "fee": "1.2% + 1.00zł",
+            "description": "for all European cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Multi-currency settlement",
+          "availableFees": {
+            "fee": "1%",
+            "description": "of pay out volume or a minimum fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "3D Secure authentication",
+          "availableFees": {
+            "fee": "Included",
+            "description": "0.12zł per 3D Secure attempt for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card account updater",
+          "availableFees": {
+            "fee": "Included",
+            "description": "1.00zł per update for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Acceptance",
+          "availableFees": {
+            "fee": "Included",
+            "description": "0.08% per successful card charge for accounts with custom pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Network tokens",
+          "availableFees": {
+            "fee": "Included",
+            "description": "0.65zł per token provisioned for accounts with custom interchange pricing",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Local payment methods",
+          "availableFees": {
+            "fee": "1.9% + 1.00zł",
+            "description": "Przelewy24",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Disputes",
+          "availableFees": {
+            "fee": "90.00zł",
+            "description": "per dispute",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Vault and Forward API",
+          "availableFees": {
+            "fee": "Included",
+            "description": "",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Adaptive Pricing",
+          "availableFees": {
+            "fee": "Included",
+            "description": "Customers will be presented a conversion fee starting at 2%",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "360.00zł",
+            "description": "per month, 1-year contract",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Global tax calculation, collection, and reporting",
+          "availableFees": {
+            "fee": "2.00zł",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Sigma",
+          "availableFees": {
+            "fee": "70.00zł",
+            "description": "per month, infrastructure fee",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Data Pipeline",
+          "availableFees": {
+            "fee": "0.10zł",
+            "description": "per transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar’s machine learning",
+          "availableFees": {
+            "fee": "0.23zł",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Radar for Fraud Teams",
+          "availableFees": {
+            "fee": "0.32zł",
+            "description": "per screened transaction",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID document and selfie verification",
+          "availableFees": {
+            "fee": "5.75zł",
+            "description": "per verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "ID number lookup",
+          "availableFees": {
+            "fee": "1.90zł",
+            "description": "per lookup",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Instant bank account verifications",
+          "availableFees": {
+            "fee": "6.00zł",
+            "description": "per successful instant verification",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Balances",
+          "availableFees": {
+            "fee": "0.40zł",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Account owners",
+          "availableFees": {
+            "fee": "6.00zł",
+            "description": "per successful API call",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Transactions",
+          "availableFees": {
+            "fee": "1.50zł",
+            "description": "per institution per account holder per month",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Atlas",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "one-time + ongoing costs of running a company",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Commitments",
+          "availableFees": {
+            "fee": "Included",
+            "description": "No Stripe Climate-specific fees",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "1.4%",
+            "description": "per successful charge for EEA cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "2.9%",
+            "description": "per successful charge for non-EEA cards",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "0.40zł",
+            "description": "per authorisation for Tap to Pay",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "In-person card processing",
+          "availableFees": {
+            "fee": "0.20zł",
+            "description": "per authorisation for optional point-to-point-encryption",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "1,299.00zł",
+            "description": "Stripe Reader S700 Excl. VAT",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "899.00zł",
+            "description": "BBPOS WisePOS E Excl. VAT",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Card readers",
+          "availableFees": {
+            "fee": "249.00zł",
+            "description": "BBPOS WisePad 3 Excl. VAT",
+            "applicable_when": ""
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.35",
+            "description": "for Bancontact",
+            "applicable_when": "Local payment methods"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€500.00",
+            "description": "per month, 1-year contract",
+            "applicable_when": "Subscription and cancellation terms apply"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "€0.025",
+            "description": "per transaction",
+            "applicable_when": "Data Pipeline"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Custom",
+          "availableFees": {
+            "fee": "US$500.00",
+            "description": "One-time",
+            "applicable_when": "Form an LLC or C Corporation"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing Starter",
+          "availableFees": {
+            "fee": "0.4%",
+            "description": "Cost per paid invoice for businesses with simpler invoicing needs.",
+            "applicable_when": "Charged when an invoice is paid through Stripe."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Invoicing Plus",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "Cost per paid invoice for businesses with more advanced invoicing requirements.",
+            "applicable_when": "Charged when an invoice is paid through Stripe."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Domestic Card Processing Fees",
+          "availableFees": {
+            "fee": "1.70% + A$0.30",
+            "description": "For online (Card Not Present) payments",
+            "applicable_when": "Starting April 1, 2024"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Domestic Card Processing Fees",
+          "availableFees": {
+            "fee": "1.70% + A$0.10",
+            "description": "For Stripe Terminal (Card Present) payments",
+            "applicable_when": "Starting April 1, 2024"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "SEPA Direct Debit",
+          "availableFees": {
+            "fee": "SEPA Failure fee",
+            "description": "Fee for failed SEPA Direct Debit payments",
+            "applicable_when": "Applicable when a SEPA Direct Debit payment fails."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "SEPA Direct Debit",
+          "availableFees": {
+            "fee": "SEPA Dispute fee",
+            "description": "Fee for disputes related to SEPA Direct Debit payments",
+            "applicable_when": "Applicable when a SEPA Direct Debit payment is disputed."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Bacs Direct Debit",
+          "availableFees": {
+            "fee": "£5.00",
+            "description": "Fee charged for each dispute related to Bacs Direct Debit transactions.",
+            "applicable_when": "Starting June 1, 2024"
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Mainly domestic",
+          "availableFees": {
+            "fee": "3% per successful charge",
+            "description": "Processing fees for domestic transactions",
+            "applicable_when": "When processing payments primarily in INR."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Mainly international",
+          "availableFees": {
+            "fee": "4.3% per successful charge",
+            "description": "Processing fees for international transactions",
+            "applicable_when": "When processing payments primarily in multiple currencies."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Currency conversion fees",
+          "availableFees": {
+            "fee": "Additional 2% if required",
+            "description": "Fees for currency conversion during transactions",
+            "applicable_when": "When end customers are charged a conversion fee by their issuing bank."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay-as-you-go (PAYG) no-code integration",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "Fee based on the volume processed in jurisdictions where you are registered to collect tax.",
+            "applicable_when": "For transactions in jurisdictions where you have an active tax registration."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay-as-you-go (PAYG) API pricing - Transaction API",
+          "availableFees": {
+            "fee": "0.50 USD",
+            "description": "Price per call for the Transaction API.",
+            "applicable_when": "For each API call made."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay-as-you-go (PAYG) API pricing - Calculation API",
+          "availableFees": {
+            "fee": "0.05 USD",
+            "description": "Price per call for the Calculation API.",
+            "applicable_when": "For each API call made."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Subscription Tier 1",
+          "availableFees": {
+            "fee": "90 USD",
+            "description": "Monthly fee for Tier 1 subscription.",
+            "applicable_when": "Includes 200 transactions and 2,000 calculation API calls per month."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Subscription Tier 2",
+          "availableFees": {
+            "fee": "430 USD",
+            "description": "Monthly fee for Tier 2 subscription.",
+            "applicable_when": "Includes 1,000 transactions and 10,000 calculation API calls per month."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Subscription Tier 3",
+          "availableFees": {
+            "fee": "1000 USD",
+            "description": "Monthly fee for Tier 3 subscription.",
+            "applicable_when": "Includes 2,500 transactions and 25,000 calculation API calls per month."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Subscription Tier 4",
+          "availableFees": {
+            "fee": "1500 USD",
+            "description": "Monthly fee for Tier 4 subscription.",
+            "applicable_when": "Includes 5,000 transactions and 50,000 calculation API calls per month."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "US Registration Overage Fee",
+          "availableFees": {
+            "fee": "150 USD",
+            "description": "Fee for each US registration beyond entitlement.",
+            "applicable_when": "For US registrations beyond the included entitlements."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "US Filing Overage Fee",
+          "availableFees": {
+            "fee": "55 USD",
+            "description": "Fee for each US filing beyond entitlement.",
+            "applicable_when": "For US filings beyond the included entitlements."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Filing Cost - Europe",
+          "availableFees": {
+            "fee": "100 USD monthly / 200 USD quarterly / 200 USD OSS",
+            "description": "Per-filing cost for EU-based businesses or those not requiring fiscal representation.",
+            "applicable_when": "For filing services in Europe."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Filing Cost - US and Canada",
+          "availableFees": {
+            "fee": "55 USD",
+            "description": "Per-filing cost for US and Canada.",
+            "applicable_when": "For filing services in the US and Canada."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Filing Cost - Mexico",
+          "availableFees": {
+            "fee": "1000 USD",
+            "description": "Per-filing cost for Mexico.",
+            "applicable_when": "For filing services in Mexico."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Filing Cost - Japan",
+          "availableFees": {
+            "fee": "4800 USD",
+            "description": "Per-filing cost for Japan.",
+            "applicable_when": "For filing services in Japan."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Filing Cost - Rest of the World",
+          "availableFees": {
+            "fee": "100 USD monthly / 200 USD quarterly",
+            "description": "Per-filing cost for the rest of the world.",
+            "applicable_when": "For filing services in regions outside of the specified countries."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay as you go",
+          "availableFees": {
+            "fee": "0.5%",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "Taxes calculated and collected on Billing, Checkout, Invoicing, and Payment Links integrations."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax API integration",
+          "availableFees": {
+            "fee": "50¢",
+            "description": "per transaction, where you’re registered to collect taxes",
+            "applicable_when": "Taxes on transactions created through Stripe’s payment APIs or any payment processor. Each transaction includes 10 calculation API calls. 5¢ per calculation API call above 10."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay monthly",
+          "availableFees": {
+            "fee": "$90",
+            "description": "Per month, 1-year contract",
+            "applicable_when": "2 US registrations per year, $150 per additional registration, 200 transactions per month, 50¢ per additional transaction, 2,000 calculation API calls per month, 5¢ per additional API call, 4 US filings per year, $55 per additional filing."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay monthly",
+          "availableFees": {
+            "fee": "$430",
+            "description": "Per month, 1-year contract",
+            "applicable_when": "6 US registrations per year, $150 per additional registration, 2,500 transactions per month, 46¢ per additional transaction, 25,000 calculation API calls per month, 5¢ per additional API call, 20 US filings per year, $55 per additional filing."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay monthly",
+          "availableFees": {
+            "fee": "$1,000",
+            "description": "Per month, 1-year contract",
+            "applicable_when": "10 US registrations per year, $150 per additional registration, 5,000 transactions per month, 35¢ per additional transaction, 50,000 calculation API calls per month, 4¢ per additional API call, 32 US filings per year, $55 per additional filing."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Pay monthly",
+          "availableFees": {
+            "fee": "$1,500",
+            "description": "Per month, 1-year contract",
+            "applicable_when": "10+ US registrations per year, 5,000+ transactions per month, 50,000+ calculation API calls per month, 32+ US filings per year."
+          }
+        }
+      },
+      {
+        "Product": {
+          "name": "Stripe Tax Custom pricing",
+          "availableFees": {
+            "fee": "",
+            "description": "Custom pricing available for companies with large payments volume, high-value transactions, or unique business models.",
+            "applicable_when": "Contact sales for more information."
+          }
+        }
+      }
+    ]
+  }
+]
