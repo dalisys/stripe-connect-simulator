@@ -39,35 +39,37 @@ export default function PaymentInputForm({ formData, onChange }) {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-wrap">
+    <div className="bg-white rounded-lg p-4">
+      <div className="grid grid-cols-2 gap-6">
         {/* Left Column */}
-        <div className="w-1/2 mb-6 ">
-          {/* Payment Amount */}
-          <div className="mb-6">
-            <div className="flex items-center gap-1 mb-2">
-              <Label
-                htmlFor="paymentAmount"
-                className="text-sm font-medium"
-              >
-                Payment Amount ($)
-              </Label>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-sm">
-                    <p className="text-xs">
-                      The total amount charged to the customer for this
-                      transaction.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+        <div className="mt-10 space-y-8">
+          {/* Payment Amount Section */}
+          <div className="space-y-1">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1">
+                <Label
+                  htmlFor="paymentAmount"
+                  className="text-xs text-gray-500"
+                >
+                  Payment Amount ($)
+                </Label>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-sm">
+                      <p className="text-xs">
+                        The total amount charged to the customer for this
+                        transaction.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
             </div>
-            <div className="flex h-10 w-full max-w-[300px]">
-              <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+            <div className="flex h-10 w-full rounded-md">
+              <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                 $
               </span>
               <Input
@@ -84,29 +86,28 @@ export default function PaymentInputForm({ formData, onChange }) {
             </div>
           </div>
 
-          {/* Application Fee */}
-          <div>
-            <div className="flex items-center gap-1 mb-2">
-              <Label className="text-sm font-medium">Application Fee</Label>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-sm">
-                    <p className="text-xs">
-                      The fee your platform charges on each transaction. This
-                      fee is taken from the connected account and transferred to
-                      your platform. For marketplaces, this is typically your
-                      commission or service fee.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+          {/* Application Fee Section */}
+          <div className="space-y-4 pt-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1">
+                <Label className="text-sm font-medium">Application Fee</Label>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-sm">
+                      <p className="text-xs">
+                        The fee your platform charges on each transaction.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
             </div>
 
-            <div className="flex items-center gap-4 mb-2">
-              <div className="flex items-center gap-1">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
                 <input
                   type="radio"
                   id="fixed-fee"
@@ -117,13 +118,13 @@ export default function PaymentInputForm({ formData, onChange }) {
                 />
                 <Label
                   htmlFor="fixed-fee"
-                  className="text-xs cursor-pointer"
+                  className="text-xs"
                 >
                   Fixed amount
                 </Label>
               </div>
 
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <input
                   type="radio"
                   id="percent-fee"
@@ -134,7 +135,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                 />
                 <Label
                   htmlFor="percent-fee"
-                  className="text-xs cursor-pointer"
+                  className="text-xs"
                 >
                   Percentage
                 </Label>
@@ -142,8 +143,8 @@ export default function PaymentInputForm({ formData, onChange }) {
             </div>
 
             {formData.applicationFeeType === "fixed" ? (
-              <div className="flex h-10 w-full max-w-[300px]">
-                <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+              <div className="flex h-10 w-full rounded-md">
+                <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                   $
                 </span>
                 <Input
@@ -161,7 +162,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                 />
               </div>
             ) : (
-              <div className="flex h-10 w-full max-w-[300px]">
+              <div className="flex h-10 w-full rounded-md">
                 <Input
                   id="applicationFeePercent"
                   type="number"
@@ -175,15 +176,14 @@ export default function PaymentInputForm({ formData, onChange }) {
                   }
                   className="rounded-r-none text-sm h-full"
                 />
-                <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                   %
                 </span>
               </div>
             )}
 
-            {/* Connected Account Fee Option - Only show when Platform handles pricing is selected */}
             {formData.feeHandling === "platform" && (
-              <div className="flex items-center space-x-2 mt-2">
+              <div className="flex items-center space-x-2">
                 <Switch
                   id="connectedAccountFee"
                   checked={formData.includeConnectedAccountFee}
@@ -193,7 +193,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                 />
                 <Label
                   htmlFor="connectedAccountFee"
-                  className="text-xs cursor-pointer flex items-center gap-1"
+                  className="text-xs flex items-center gap-1"
                 >
                   <span>$2 per active connected account monthly</span>
                   <TooltipProvider>
@@ -204,8 +204,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                       <TooltipContent className="max-w-sm">
                         <p className="text-xs">
                           Stripe charges a $2 monthly fee for each active
-                          connected account. This fee is prorated in this
-                          simulation.
+                          connected account.
                         </p>
                       </TooltipContent>
                     </Tooltip>
@@ -217,90 +216,55 @@ export default function PaymentInputForm({ formData, onChange }) {
         </div>
 
         {/* Right Column */}
-        <div className="w-1/2 mb-6">
-          {/* Stripe Processing Fee */}
-          <div className="mb-6">
-            <div className="flex items-center gap-1 mb-2">
-              <Label className="text-sm font-medium">
-                Stripe Processing Fee
-              </Label>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
-                  </TooltipTrigger>
-                  <TooltipContent className="max-w-sm">
-                    <p className="text-xs">
-                      Stripe's standard processing fee for online payments.
-                      Varies by region and account type.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </div>
-
-            <div className="flex items-center justify-between mb-2">
+        <div className="space-y-6">
+          {/* Stripe Processing Fee Section */}
+          <div className="space-y-1">
+            <div className="flex items-center justify-between">
               <div className="flex items-center gap-1">
-                <Label
-                  htmlFor="stripeFee"
-                  className="text-xs font-medium"
-                >
-                  Processing Fee
+                <Label className="text-sm font-medium">
+                  Stripe Processing Fee
                 </Label>
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Info className="h-4 w-4 text-gray-400 cursor-pointer" />
+                      <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
                     </TooltipTrigger>
                     <TooltipContent className="max-w-sm">
                       <p className="text-xs">
-                        Stripe's processing fees vary by region and card type.
-                        <br />
-                        <br />
-                        <strong>US rates:</strong> 2.9% + $0.30 per successful
-                        card charge
-                        <br />
-                        <strong>EU rates:</strong> 1.5% + €0.25 for European
-                        cards
-                        <br />
-                        <br />
-                        Custom rates may apply for high-volume businesses.
+                        Stripe's standard processing fee for online payments.
                       </p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
               </div>
-
               <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1">
-                  <div
-                    className={`text-xs px-2 py-1 rounded-md cursor-pointer ${
-                      formData.feeRegion === "us"
-                        ? "bg-blue-100 text-blue-800"
-                        : "bg-gray-100 text-gray-600"
-                    }`}
-                    onClick={() => setRegionFees("us")}
-                  >
-                    US
-                  </div>
-                  <div
-                    className={`text-xs px-2 py-1 rounded-md cursor-pointer ${
-                      formData.feeRegion === "eu"
-                        ? "bg-blue-100 text-blue-800"
-                        : "bg-gray-100 text-gray-600"
-                    }`}
-                    onClick={() => setRegionFees("eu")}
-                  >
-                    EU
-                  </div>
+                <div
+                  className={`text-xs px-2 py-1 rounded-md cursor-pointer transition-colors ${
+                    formData.feeRegion === "us"
+                      ? "bg-blue-100 text-blue-800"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                  onClick={() => setRegionFees("us")}
+                >
+                  US
+                </div>
+                <div
+                  className={`text-xs px-2 py-1 rounded-md cursor-pointer transition-colors ${
+                    formData.feeRegion === "eu"
+                      ? "bg-blue-100 text-blue-800"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                  onClick={() => setRegionFees("eu")}
+                >
+                  EU
                 </div>
               </div>
             </div>
 
-            <div className="flex mb-2 w-full">
-              <div className="mr-6 w-1/2">
-                <div className="text-xs text-gray-500 mb-1">Percentage Fee</div>
-                <div className="flex h-10 w-full max-w-[180px]">
+            <div className="grid grid-cols-2 gap-4 pt-2">
+              <div className="space-y-1">
+                <Label className="text-xs text-gray-500">Percentage Fee</Label>
+                <div className="flex h-10 w-full rounded-md">
                   <Input
                     id="stripeFee"
                     type="number"
@@ -312,16 +276,16 @@ export default function PaymentInputForm({ formData, onChange }) {
                     }
                     className="rounded-r-none text-sm h-full"
                   />
-                  <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                  <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                     %
                   </span>
                 </div>
               </div>
 
-              <div className="w-1/2">
-                <div className="text-xs text-gray-500 mb-1">Fixed Fee</div>
-                <div className="flex h-10 w-full max-w-[180px]">
-                  <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+              <div className="space-y-1">
+                <Label className="text-xs text-gray-500">Fixed Fee</Label>
+                <div className="flex h-10 w-full rounded-md">
+                  <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                     $
                   </span>
                   <Input
@@ -341,10 +305,9 @@ export default function PaymentInputForm({ formData, onChange }) {
               </div>
             </div>
 
-            {/* Custom negotiated fee for Custom accounts */}
             {formData.accountType === "custom" && (
-              <div className="mt-4">
-                <div className="flex items-center gap-1 mb-1">
+              <div className="space-y-1 pt-2">
+                <div className="flex items-center gap-1">
                   <Label
                     htmlFor="negotiatedFee"
                     className="text-xs font-medium"
@@ -359,14 +322,13 @@ export default function PaymentInputForm({ formData, onChange }) {
                       <TooltipContent className="max-w-sm">
                         <p className="text-xs">
                           Custom accounts can negotiate lower processing fees
-                          with Stripe based on volume and business type. Enter
-                          your negotiated rate here.
+                          with Stripe.
                         </p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </div>
-                <div className="flex h-10 w-full max-w-[180px]">
+                <div className="flex h-10 w-full rounded-md">
                   <Input
                     id="negotiatedFee"
                     type="number"
@@ -387,7 +349,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                     }}
                     className="rounded-r-none text-sm h-full"
                   />
-                  <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
+                  <span className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-200 bg-gray-50 text-gray-500 text-sm h-full">
                     %
                   </span>
                 </div>
@@ -395,73 +357,71 @@ export default function PaymentInputForm({ formData, onChange }) {
             )}
           </div>
 
-          {/* Additional Fee Options */}
-          <div>
-            <div className="text-sm font-medium mb-2">Additional Options</div>
+          {/* Additional Options Section */}
+          <div className="space-y-4 pt-6">
+            <Label className="text-sm font-medium">Additional Options</Label>
 
-            {/* International Fee */}
-            <div className="flex items-center space-x-2 mb-2">
-              <Switch
-                id="internationalFee"
-                checked={formData.includeInternationalFee}
-                onCheckedChange={(checked) =>
-                  onChange({ includeInternationalFee: checked })
-                }
-              />
-              <Label
-                htmlFor="internationalFee"
-                className="text-xs cursor-pointer flex items-center gap-1"
-              >
-                <span>Include international card fee (+1%)</span>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
-                    </TooltipTrigger>
-                    <TooltipContent className="max-w-sm">
-                      <p className="text-xs">
-                        Stripe charges an additional 1% for processing payments
-                        from cards issued outside your account region.
-                      </p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Label>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <Switch
+                  id="internationalFee"
+                  checked={formData.includeInternationalFee}
+                  onCheckedChange={(checked) =>
+                    onChange({ includeInternationalFee: checked })
+                  }
+                />
+                <Label
+                  htmlFor="internationalFee"
+                  className="text-xs flex items-center gap-1"
+                >
+                  <span>Include international card fee (+1%)</span>
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-sm">
+                        <p className="text-xs">
+                          Additional 1% for processing international cards.
+                        </p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Label>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <Switch
+                  id="monthlyFee"
+                  checked={formData.includeMonthlyFee}
+                  onCheckedChange={(checked) =>
+                    onChange({ includeMonthlyFee: checked })
+                  }
+                />
+                <Label
+                  htmlFor="monthlyFee"
+                  className="text-xs flex items-center gap-1"
+                >
+                  <span>Include monthly fee (prorated)</span>
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
+                      </TooltipTrigger>
+                      <TooltipContent className="max-w-sm">
+                        <p className="text-xs">
+                          Monthly fees prorated for this transaction.
+                        </p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Label>
+              </div>
             </div>
 
-            {/* Monthly Fee */}
-            <div className="flex items-center space-x-2 mb-2">
-              <Switch
-                id="monthlyFee"
-                checked={formData.includeMonthlyFee}
-                onCheckedChange={(checked) =>
-                  onChange({ includeMonthlyFee: checked })
-                }
-              />
-              <Label
-                htmlFor="monthlyFee"
-                className="text-xs cursor-pointer flex items-center gap-1"
-              >
-                <span>Include monthly fee (prorated)</span>
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Info className="h-3.5 w-3.5 text-gray-400 cursor-pointer" />
-                    </TooltipTrigger>
-                    <TooltipContent className="max-w-sm">
-                      <p className="text-xs">
-                        Some Stripe account types have monthly fees. This
-                        simulation prorates these fees for a single transaction.
-                      </p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Label>
-            </div>
-
-            {/* Payout Timing */}
-            <div className="mt-4">
-              <div className="flex items-center gap-1 mb-2">
+            {/* Payout Timing Section */}
+            <div className="space-y-2">
+              <div className="flex items-center gap-1">
                 <Label className="text-xs font-medium">Payout Timing</Label>
                 <TooltipProvider>
                   <Tooltip>
@@ -470,9 +430,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                     </TooltipTrigger>
                     <TooltipContent className="max-w-sm">
                       <p className="text-xs">
-                        Standard payouts are processed on a 2-day rolling basis.
-                        Instant payouts are available immediately but incur an
-                        additional fee.
+                        Choose between standard or instant payouts.
                       </p>
                     </TooltipContent>
                   </Tooltip>
@@ -480,7 +438,7 @@ export default function PaymentInputForm({ formData, onChange }) {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     id="standard-payout"
@@ -491,13 +449,13 @@ export default function PaymentInputForm({ formData, onChange }) {
                   />
                   <Label
                     htmlFor="standard-payout"
-                    className="text-xs cursor-pointer"
+                    className="text-xs"
                   >
                     Standard (2 days)
                   </Label>
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   <input
                     type="radio"
                     id="instant-payout"
@@ -508,7 +466,7 @@ export default function PaymentInputForm({ formData, onChange }) {
                   />
                   <Label
                     htmlFor="instant-payout"
-                    className="text-xs cursor-pointer"
+                    className="text-xs"
                   >
                     Instant (+1% fee)
                   </Label>
