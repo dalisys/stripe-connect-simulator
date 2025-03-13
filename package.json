@@ -2,6 +2,13 @@
   "name": "stripe-connect-simulator",
   "version": "0.1.0",
   "private": true,
+  "author": "dalisys",
+  "license": "MIT",
+  "homepage": "https://stripe-connect-simulator.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dalisys/stripe-connect-simulator"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
