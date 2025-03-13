@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
@@ -47,7 +47,10 @@ export default function RootLayout({ children }) {
             </div>
           </header>
           <main className="grow">
-            <div className="container mx-auto px-6 py-6">{children}</div>
+            <div className="container mx-auto px-6 py-6">
+              {children}
+              <Analytics />
+            </div>
           </main>
           <footer className="py-6 border-t border-gray-200 bg-gray-50">
             <div className="container mx-auto px-6">
