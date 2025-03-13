@@ -41,9 +41,35 @@ export default function RootLayout({ children }) {
           <main className="grow">
             <div className="container mx-auto px-6 py-6">{children}</div>
           </main>
-          <footer className="py-3 border-t text-center text-xs text-gray-500">
-            This simulator is for demonstration purposes only and is not
-            affiliated with Stripe.
+          <footer className="py-6 border-t border-gray-200 bg-gray-50">
+            <div className="container mx-auto px-6">
+              <div className="flex flex-col items-center justify-center space-y-3">
+                <p className="text-sm text-gray-600 text-center max-w-2xl">
+                  This simulator is for demonstration purposes only and is not
+                  affiliated with Stripe. All calculations and data should be
+                  verified with Stripe's official documentation and tools.
+                </p>
+                <div className="flex items-center space-x-4 text-xs text-gray-500">
+                  <a
+                    href="https://stripe.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-indigo-600 transition-colors duration-200"
+                  >
+                    Stripe Website
+                  </a>
+                  <span>•</span>
+                  <a
+                    href="https://stripe.com/docs/connect"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-indigo-600 transition-colors duration-200"
+                  >
+                    Connect Documentation
+                  </a>
+                </div>
+              </div>
+            </div>
           </footer>
         </div>
       </body>
