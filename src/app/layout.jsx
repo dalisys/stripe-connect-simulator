@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata = {
   title: "Stripe Connect Fee Simulator",
   description: "Simulate Stripe Connect fee structures and payment flows",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {

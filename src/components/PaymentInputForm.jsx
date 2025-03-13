@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Switch } from "./ui/switch";
@@ -32,7 +32,7 @@ export default function PaymentInputForm({ formData, onChange }) {
   };
 
   // Set EU as initial state if feeRegion is not set
-  useState(() => {
+  useEffect(() => {
     if (!formData.feeRegion) {
       setRegionFees("eu");
     }
