@@ -27,7 +27,7 @@ export default function AccountTypeSelector({ value, onChange }) {
                 <ul className="list-disc pl-4 mt-1 space-y-1">
                   <li>
                     <strong>Standard:</strong> Quick setup, Stripe manages
-                    compliance
+                    compliance, users have access to Stripe standard dashboard
                   </li>
                   <li>
                     <strong>Express:</strong> Balanced, customizable onboarding,

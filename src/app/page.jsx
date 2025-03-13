@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PaymentInputForm from "../components/PaymentInputForm";
 import AccountTypeSelector from "../components/AccountTypeSelector";
 import ChargeTypeSelector from "../components/ChargeTypeSelector";
+import FeeHandlingSelector from "../components/FeeHandlingSelector";
 import FeeCalculator from "../components/FeeCalculator";
 import PaymentFlowDiagram from "../components/PaymentFlowDiagram";
+import ConnectGuideToggle from "../components/ConnectGuideToggle";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -23,7 +25,91 @@ export default function Home() {
     includeMonthlyFee: true,
     includeConnectedAccountFee: true,
     payoutTiming: "standard",
+    connectGuideValidation: true, // Default to enabled
   });
+
+  // Determine which options should be disabled based on the current configuration
+  const [disabledOptions, setDisabledOptions] = useState({
+    chargeTypes: {
+      direct: false,
+      destination: false,
+      separate: false,
+    },
+    feeHandling: {
+      stripe: false,
+      platform: false,
+    },
+  });
+
+  // Update disabled options when relevant form data changes
+  useEffect(() => {
+    if (formData.connectGuideValidation) {
+      // Apply Stripe Connect guide validation rules
+      const newDisabledOptions = {
+        chargeTypes: {
+          direct: formData.accountType === "express",
+          destination:
+            formData.accountType === "standard" &&
+            formData.connectGuideValidation,
+          separate:
+            formData.accountType === "standard" &&
+            formData.connectGuideValidation,
+        },
+        feeHandling: {
+          stripe:
+            (formData.accountType === "express" &&
+              formData.connectGuideValidation) ||
+            ((formData.chargeType === "destination" ||
+              formData.chargeType === "separate") &&
+              formData.connectGuideValidation),
+          platform: false,
+        },
+      };
+      setDisabledOptions(newDisabledOptions);
+
+      // Auto-correct invalid combinations
+      let updatedData = { ...formData };
+      let needsUpdate = false;
+
+      // If current charge type is disabled, switch to an allowed one
+      if (newDisabledOptions.chargeTypes[formData.chargeType]) {
+        if (formData.accountType === "standard") {
+          updatedData.chargeType = "direct";
+          needsUpdate = true;
+        } else if (formData.accountType === "express") {
+          updatedData.chargeType = "destination";
+          needsUpdate = true;
+        }
+      }
+
+      // If current fee handling is disabled, switch to an allowed one
+      if (newDisabledOptions.feeHandling[formData.feeHandling]) {
+        updatedData.feeHandling = "platform";
+        needsUpdate = true;
+      }
+
+      if (needsUpdate) {
+        setFormData(updatedData);
+      }
+    } else {
+      // No validation, all options enabled
+      setDisabledOptions({
+        chargeTypes: {
+          direct: false,
+          destination: false,
+          separate: false,
+        },
+        feeHandling: {
+          stripe: false,
+          platform: false,
+        },
+      });
+    }
+  }, [
+    formData.accountType,
+    formData.chargeType,
+    formData.connectGuideValidation,
+  ]);
 
   const handleFormChange = (newData) => {
     setFormData({ ...formData, ...newData });
@@ -38,9 +124,15 @@ export default function Home() {
         <div className="flex flex-wrap">
           {/* Account Configuration */}
           <div className="w-full md:w-[40%] pr-4">
-            <h2 className="text-base font-semibold mb-3">
-              Account Configuration
-            </h2>
+            <div className="flex justify-between items-center mb-3">
+              <h2 className="text-base font-semibold">Account Configuration</h2>
+              <ConnectGuideToggle
+                value={formData.connectGuideValidation}
+                onChange={(value) =>
+                  handleFormChange({ connectGuideValidation: value })
+                }
+              />
+            </div>
             <div className="space-y-4">
               <AccountTypeSelector
                 value={formData.accountType}
@@ -49,6 +141,13 @@ export default function Home() {
               <ChargeTypeSelector
                 value={formData.chargeType}
                 onChange={(value) => handleFormChange({ chargeType: value })}
+                disabled={disabledOptions.chargeTypes}
+                accountType={formData.accountType}
+              />
+              <FeeHandlingSelector
+                value={formData.feeHandling}
+                onChange={(value) => handleFormChange({ feeHandling: value })}
+                disabled={disabledOptions.feeHandling}
               />
             </div>
           </div>
